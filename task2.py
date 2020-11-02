@@ -32,7 +32,7 @@ button3 = tk.Button(master= framegrid, text = "Next>", font=("Comic Sans MS", 7)
 
 
 
-label1.pack(side= TOP,a nchor = NW)
+label1.pack(side= TOP, anchor = NW)
 label2.place(x= 210, y=40)
 button1.place(x= 325, y = 0)
 entry1.place(x=430, y=5)
