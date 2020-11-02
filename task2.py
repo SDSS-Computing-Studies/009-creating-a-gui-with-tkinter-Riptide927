@@ -7,7 +7,7 @@ window = tk.Tk()
 window.title("Peter's unlicnesed vet clinic")
 photo = PhotoImage(file = "dog.png")
 window.geometry("650x180")
-#window.resizable(0,0)
+window.resizable(0,0)
 
 label1 = tk.Label(image= photo )
 label2= tk.Label(text= "Client Database",font=("Comic Sans MS", 14) )
@@ -26,8 +26,13 @@ Entrygrid3 = tk.Entry(master = framegrid)
 Entrygrid4 = tk.Entry(master = framegrid)
 Entrygrid5 = tk.Entry(master = framegrid)
 
+buttone1 = tk.Button(master= framegrid, text = "< Previous", font=("Comic Sans MS", 7))
+button2 = tk.Button(master= framegrid, text = "Save Entry", font=("Comic Sans MS", 10))
+button3 = tk.Button(master= framegrid, text = "Next>", font=("Comic Sans MS", 7))
 
-label1.pack(side= TOP, anchor = NW)
+
+
+label1.pack(side= TOP,a nchor = NW)
 label2.place(x= 210, y=40)
 button1.place(x= 325, y = 0)
 entry1.place(x=430, y=5)
@@ -43,7 +48,10 @@ Entrygrid2.grid(row= 1, column = 1)
 Entrygrid3.grid(row= 1, column = 2)
 Entrygrid4.grid(row= 1, column = 3)
 Entrygrid5.grid(row= 1, column = 4)
-
+#Buttons
+buttone1.grid(row = 2, column = 0)
+button2.grid(row = 2, column = 2)
+button3.grid(row = 2, column = 4)
 
 
 
